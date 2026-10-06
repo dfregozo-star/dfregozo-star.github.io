@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+nav {
+    background-color: rgb(78, 116, 8);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: rgb(167, 101, 3);
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    min-width: 200px;
+    z-index: 10;
+}
+
+/* Corregido: solo despliega el submenú hijo directo */
+nav li:hover > ul {
+    display: block;
+}
+
+/* Soporte flexible para main y section */
+main, section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.principal {
+    width: 70%;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid rgb(54, 155, 8);
+    box-sizing: border-box;
+}
+
+.secundario {
+    width: 30%;
+    background-color: rgb(228, 235, 135);
+    padding: 20px;
+    border: 2px solid rgb(110, 148, 5);
+    box-sizing: border-box;
+}
+
+/* Estilo ligero para las tarjetas de cada tema en mundodigital.html */
+.tema-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: aliceblue;
+    color: rgb(31, 29, 197);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
