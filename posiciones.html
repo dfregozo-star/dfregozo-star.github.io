@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Posiciones en HTML - Mi sitio web</title>
+        <title>Práctica de posiciones - Mi sitio web</title>
         <link rel="stylesheet" href="gokuestilo.css">
     </head>
     <body>
@@ -24,7 +24,7 @@
                     <a href="#">Segundo parcial</a>
                     <ul>
                         <li><a href="practica1.html">Práctica uno</a></li>
-                        <li><a href="posiciones.html">Posiciones</a></li>
+                        <li><a href="posiciones.html">Práctica de posiciones</a></li>
                         <li><a href="mundo digital.html">Mi mundo digital</a></li>
                     </ul>
                 </li>
@@ -38,55 +38,49 @@
         </nav>
 
         <section>
-            <!-- ASIDE PRINCIPAL: Práctica de Posiciones -->
+            <!-- CONTENIDO PRINCIPAL -->
             <aside class="principal">
-                <h2>Posiciones con CSS</h2>
-                <p>Esta práctica consiste en aplicar las propiedades de posicionamiento en HTML con CSS, estas nos permiten controlar la ubicación de los elementos dentro de una página web.</p>
-                
-                <h3>¿Qué es el posicionamiento?</h3>
-                <p>Dependiendo de la posición, un elemento puede permanecer en su lugar, desplazarse, colocarse encima de otro o permanecer fijo en la pantalla.</p>
-                
-                <h3>Posiciones que estudiaremos:</h3>
-                <ul>
-                    <li><code>static</code></li>
-                    <li><code>relative</code></li>
-                    <li><code>absolute</code></li>
-                    <li><code>fixed</code></li>
-                    <li><code>sticky</code></li>
-                </ul>
+                <h2>📍 Práctica de Posiciones en CSS</h2>
+                <p>En esta práctica exploramos el comportamiento de los valores de la propiedad <code>position</code> en CSS según la guía de freeCodeCamp.</p>
+                <br>
 
-                <hr style="margin: 20px 0;">
+                <!-- Caja Static -->
+                <div class="caja-demo pos-static">
+                    <b>position: static;</b><br>
+                    Es el comportamiento por defecto de los elementos en el flujo normal de la página.
+                </div>
 
-                <!-- Ejemplos prácticos -->
-                <div class="ejemplo">
-                   <div class="programador static">
-                       <b>Estilo Static:</b> Los programadores trabajan constantemente con números, lógica y estructuras para construir soluciones.
-                   </div>
+                <!-- Caja Relative -->
+                <div class="caja-demo pos-relative">
+                    <b>position: relative;</b><br>
+                    Permite mover el elemento respecto a su posición original usando <i>top</i>, <i>right</i>, <i>bottom</i> o <i>left</i>.
                 </div>
-                <br>
-                <div class="ejemplo">
-                   <div class="programador relative">
-                       <b>Estilo Relative:</b> El día del programador se celebra tradicionalmente el día 256 del año.
-                   </div>
+
+                <!-- Contenedor para probar Position Absolute -->
+                <div class="contenedor-relativo">
+                    <p>Contenedor padre con <code>position: relative;</code></p>
+                    <div class="caja-demo pos-absolute">
+                        <b>position: absolute;</b><br>
+                        Se posiciona de forma relativa a su ancestro posicionado más cercano.
+                    </div>
                 </div>
-                <br>
-                 <div class="ejemplo">
-                   <div class="programador absolute">
-                       <b>Estilo Absolute:</b> El número 256 tiene un significado especial en informática.
-                   </div>
-                </div>
-                <br>
-                 <div class="ejemplo">
-                   <div class="programador sticky">
-                       <b>Estilo Sticky:</b> 2<sup>8</sup> = 256, está relacionado con los bits utilizados para representar 256 valores diferentes.
-                   </div>
+
+                <!-- Caja Sticky -->
+                <div class="caja-demo pos-sticky">
+                    <b>position: sticky;</b><br>
+                    Se comporta como <i>relative</i> hasta que al hacer scroll alcanza un umbral y se fija en pantalla.
                 </div>
             </aside>
 
             <!-- ASIDE SECUNDARIO -->
             <aside class="secundario">
-                <h2>🕊️</h2>
-                <p><i>Nota: Para probar cómo funcionan las posiciones (especialmente <code>relative</code>, <code>absolute</code> y <code>sticky</code>), asegúrate de tener definidos sus estilos correspondientes en tu CSS.</i></p>
+                <h3>📌 Posición Fixed</h3>
+                <p>La posición <code>fixed</code> fija un elemento respecto a la ventana del navegador (viewport), por lo que se mantiene en pantalla independientemente del desplazamiento.</p>
+                
+                <!-- Caja Fixed -->
+                <div class="caja-demo pos-fixed">
+                     Elemento Fixed (fijo en la esquina inferior derecha)
+                </div>
             </aside>
         </section>
 
