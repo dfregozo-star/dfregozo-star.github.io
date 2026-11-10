@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Conversor de temperaturas - Mi sitio web</title>
+        <link rel="stylesheet" href="gokuestilo.css">
+    </head>
+    <body>
+        <header>
+            <img src="vegito2.jpg" alt="Encabezado Vegito">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li>
+                    <a href="#">Conocenos</a>
+                    <ul>
+                        <li><a href="informacionpersonal.html">Informacion personal</a></li>
+                        <li><a href="pasatiemposs.html">Pasatiempo</a></li>
+                    </ul>   
+                </li>
+                <li>
+                   <a href="#">Segundo parcial</a>
+                    <ul>
+                      <li><a href="practica1.html">Práctica uno</a></li>
+                      <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                      <li><a href="mundo digital.html">Mi mundo digital</a></li>
+                      <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tercer parcial</a>
+                    <ul>
+                        <li><a href="practica1_p3.html">Práctica uno</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- CONTENIDO PRINCIPAL -->
+            <aside class="principal">
+                <h2>🌡️ Conversor de temperaturas</h2>
+                <p>Selecciona el tipo de conversión e ingresa la temperatura que deseas calcular.</p>
+                <br>
+
+                <div class="formulario-conversor" style="background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ccc; max-width: 400px;">
+                    <label for="tempInput"><b>Ingresa la temperatura:</b></label><br><br>
+                    <input type="number" id="tempInput" placeholder="Ej. 30" step="any" style="width: 100%; padding: 8px; box-sizing: border-box; font-size: 16px;"><br><br>
+
+                    <label for="conversionSelect"><b>Tipo de conversión:</b></label><br><br>
+                    <select id="conversionSelect" style="width: 100%; padding: 8px; font-size: 16px;">
+                        <option value="cToF">Celsius a Fahrenheit</option>
+                        <option value="fToC">Fahrenheit a Celsius</option>
+                    </select><br><br>
+
+                    <button type="button" id="btnConvertir" style="background-color: rgb(78, 116, 8); color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 4px; cursor: pointer; width: 100%;">
+                        Convertir
+                    </button>
+                </div>
+
+                <!-- Espacio para mostrar el resultado -->
+                <div id="resultado" style="margin-top: 25px; padding: 15px; border-radius: 8px; background-color: #ffffff; border: 2px solid rgb(54, 155, 8); display: none; max-width: 400px;">
+                </div>
+            </aside>
+
+            <!-- ASIDE SECUNDARIO -->
+            <aside class="secundario">
+                <h3>📌 Fórmulas aplicadas</h3>
+                <p><b>Celsius a Fahrenheit:</b></p>
+                <code>°F = (°C × 9 / 5) + 32</code>
+                <hr style="margin: 15px 0;">
+                <p><b>Fahrenheit a Celsius:</b></p>
+                <code>°C = (°F - 32) × 5 / 9</code>
+            </aside>
+        </main>
+
+        <footer>
+            <img src="logoucol.png" alt="Logo Universidad de Colima">
+            <div>
+                <p><strong>Universidad de Colima</strong></p>
+                <p>Bachillerato 8</p>
+                <p>Programacion de Internet</p>
+            </div>
+        </footer>
+
+        <script src="temperaturas.js"></script>
+    </body>
+</html>
