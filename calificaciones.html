@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema de evaluación de calificaciones - Mi sitio web</title>
+        <link rel="stylesheet" href="gokuestilo.css">
+    </head>
+    <body>
+        <header>
+            <img src="vegito2.jpg" alt="Encabezado Vegito">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li>
+                    <a href="#">Conocenos</a>
+                    <ul>
+                        <li><a href="informacionpersonal.html">Informacion personal</a></li>
+                        <li><a href="pasatiemposs.html">Pasatiempo</a></li>
+                    </ul>   
+                </li>
+                <li>
+                    <a href="#">Segundo parcial</a>
+                    <ul>
+                        <li><a href="practica1.html">Práctica uno</a></li>
+                        <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                        <li><a href="mundo digital.html">Mi mundo digital</a></li>
+                        <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tercer parcial</a>
+                    <ul>
+                        <li><a href="practica1_p3.html">Práctica uno</a></li>
+                        <li><a href="calificaciones.html">Sistema de calificaciones</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- CONTENIDO PRINCIPAL -->
+            <aside class="principal">
+                <h2>📊 Sistema de evaluación de calificaciones</h2>
+                <p>Ingresa el nombre del estudiante y sus tres calificaciones (en escala de 0 a 10) para calcular su promedio y estado académico.</p>
+                <br>
+
+                <form id="formCalificaciones" style="background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ccc; max-width: 450px;">
+                    <label for="nombreEstudiante"><b>Nombre del estudiante:</b></label><br>
+                    <input type="text" id="nombreEstudiante" placeholder="Ej. Juan Pérez" style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; box-sizing: border-box; font-size: 15px;">
+
+                    <label for="calificacion1"><b>Primera calificación:</b></label><br>
+                    <input type="number" id="calificacion1" placeholder="0 a 10" min="0" max="10" step="any" style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; box-sizing: border-box; font-size: 15px;">
+
+                    <label for="calificacion2"><b>Segunda calificación:</b></label><br>
+                    <input type="number" id="calificacion2" placeholder="0 a 10" min="0" max="10" step="any" style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; box-sizing: border-box; font-size: 15px;">
+
+                    <label for="calificacion3"><b>Tercera calificación:</b></label><br>
+                    <input type="number" id="calificacion3" placeholder="0 a 10" min="0" max="10" step="any" style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 20px; box-sizing: border-box; font-size: 15px;">
+
+                    <button type="button" id="btnCalcular" style="background-color: rgb(78, 116, 8); color: white; border: none; padding: 12px 20px; font-size: 16px; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold;">
+                        Calcular promedio
+                    </button>
+                </form>
+
+                <!-- Espacio para mostrar los resultados -->
+                <div id="resultado" style="margin-top: 25px; padding: 20px; border-radius: 8px; background-color: #ffffff; border: 2px solid rgb(54, 155, 8); display: none; max-width: 450px;">
+                </div>
+            </aside>
+
+            <!-- ASIDE SECUNDARIO -->
+            <aside class="secundario">
+                <h3>📋 Criterios de evaluación</h3>
+                <p><b>Escala de calificaciones:</b> 0 a 10</p>
+                <p><b>Mínimo aprobatorio:</b> 6.0</p>
+                <hr style="margin: 15px 0;">
+                <h4>Tabla de observaciones:</h4>
+                <ul style="padding-left: 18px; line-height: 1.6;">
+                    <li><b>9.0 a 10:</b> Excelente desempeño</li>
+                    <li><b>8.0 a 8.9:</b> Muy buen desempeño</li>
+                    <li><b>7.0 a 7.9:</b> Buen desempeño</li>
+                    <li><b>6.0 a 6.9:</b> Desempeño suficiente</li>
+                    <li><b>Menor que 6:</b> Necesita mejorar</li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+            <img src="logoucol.png" alt="Logo Universidad de Colima">
+            <div>
+                <p><strong>Universidad de Colima</strong></p>
+                <p>Bachillerato 8</p>
+                <p>Programacion de Internet</p>
+            </div>
+        </footer>
+
+        <script src="calificaciones.js"></script>
+    </body>
+</html>
